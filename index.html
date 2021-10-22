@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,26 +23,26 @@
             <p id="leapYear"></p>
             <p id="sunday"></p>
             <br>
-            <input type="number" id="inputFiled" value="Enter Guess Number">
-            <button onclick="check()">Guess</button>
+            <input type="number" id="inputFiled" placeholder="Enter Guess Number">
+            <button onclick="check()" class="btn">Guess</button>
             <p id="sh"></p>
             <p id="august_left"></p>
             <h2>Task 9</h2>
             <input type="number" id="number1" placeholder="Enter a number">
             <input type="number" id="number2" placeholder="Enter a number">
             <p id="task9"></p>
-            <button onclick="mult()">Multiply</button>
-            <button onclick="div()">Divide</button>
+            <button onclick="mult()" class="btn">Multiply</button>
+            <button onclick="div()" class="btn">Divide</button>
             <br>
             <h3>task 10</h3>
-            <label for="temp">
+            <label for="temp" class="">
                 Enter Temperature: <input type="number" id="temp"> <label for="unit">Choose unit :</label>
-                <select name="unit" id="units">
+                <select name="unit" id="units" class="lb">
                     <option value="celcius">celcius</option>
                     <option value="fahrenheit">fahrenheit</option>
                 </select>
             </label>
-            <button class="" id="convert" onclick="convertTemp()">Convert</button>
+            <button class="btn" id="convert" onclick="convertTemp()" >Convert</button>
             <div id="showResult"></div>
             <h3>Task 11</h3>
             <p id="task11"></p>
@@ -49,7 +50,7 @@
 
             <h3>task 12</h3>
             <input type="number" name="" id="num" placeholder="Enter a number to check">
-            <button onclick="testhundred()">Check </button>
+            <button onclick="testhundred()" class="btn">Check </button>
             <p id="task12"></p>
 
             <h3>task 13</h3>
@@ -57,7 +58,7 @@
             <input type="number" name="" id="numb2">
             <input type="number" id="numb3">
 
-            <button onclick="max_of_three()">Check</button>
+            <button onclick="max_of_three()" class="btn">Check</button>
             <p id="task13"></p>
 
 
@@ -66,7 +67,7 @@
 
             <h3>Task 15</h3>
             <input type="number" id="n">
-            <button onclick="time_convert()">Check</button>
+            <button onclick="time_convert()" class="btn">Check</button>
             <p id="task15"></p>
 
             <h3>Task 16</h3>
