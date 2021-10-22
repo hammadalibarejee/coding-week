@@ -161,23 +161,26 @@ const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 document.getElementById("august_left").innerHTML = diffDays;
 
 
-let num1=parseInt (document.getElementById("number1").value);
-let num2=parseInt (document.getElementById("number2").value);
+
 
 const mult= ()=> {
+   let num1=parseInt (document.getElementById("number1").value);
+   let num2=parseInt (document.getElementById("number2").value);
     result=num1*num2;
     document.getElementById("task9").innerText=result;
 }
 const div= ()=>{
-    // if (num2==0){
-    // document.getElementById("task9").innerText="Enter value greater than 0";
-    // }
-    // else{
-    // let result=num1/num2;
-    // document.getElementById("task9").innerText=result;
-    // }
-    result=num1/num2;
-    document.getElementById("task9").innerText= result;
+   let num1=parseInt (document.getElementById("number1").value);
+   let num2=parseInt (document.getElementById("number2").value);
+    if (num2==0){
+    document.getElementById("task9").innerText="Enter value greater than 0";
+    }
+    else{
+    let result=num1/num2;
+    document.getElementById("task9").innerText=result;
+    }
+    // result=num1/num2;
+    // document.getElementById("task9").innerText= result;
     
 
 }
@@ -259,7 +262,7 @@ function capital_letter(str)
 }
 
 console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
-document.getElementById("task14").innerText=capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string.");
+document.getElementById("task14").innerText=capital_letter("hello how are you doing");
 
 //Task 15
 
